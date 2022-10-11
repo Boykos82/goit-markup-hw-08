@@ -1,10 +1,19 @@
 :root {
-    --second-font:"Raleway", sans-serif;
-    --accent-color:#2196f3;
+  --main-color: #212121;
+  --second-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --description-color: #757575;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -12,7 +21,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -39,25 +47,35 @@ body {
 
 .header-nav-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
+  color: var(--main-color);
+}
 
-  color: #212121;
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.ref-color {
+  color: var(--accent-color);
 }
 
 .header-mail-link,
 .header-tel-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--description-color);
+}
+
+.hero-sec {
+  background: #2f303a;
 }
 
 .hero-btn {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -66,80 +84,82 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
-  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--white-color);
+  background: var(--accent-color);
 }
 
 .hero {
-    font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-background: #2F303A;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .specifics-title {
-    font-weight: 700;
-font-size: 14px;
-line-height: 1.14px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-color);
 }
 
 .specifics-text {
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: #757575;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
 }
 
 .title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-letter-spacing: 0.03em;
-color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--main-color);
 }
 
 .team-name {
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.18px;
-letter-spacing: 0.03em;
-color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--main-color);
 }
 
 .team-position {
-font-size: 16px;
-line-height: 1.18px;
-letter-spacing: 0.03em;
-color: #757575;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--description-color);
 }
 
 .footer-title {
-    background: #2F303A;
+  background: #2f303a;
 }
 
-.footer-adress
-{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: #FFFFFF;
+.footer-last-part {
+  color: #ffffff;
+}
+
+.footer-title-adr {
+  font-style: normal;
+}
+
+.footer-adress {
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .footer-mail-link,
 .footer-tel-link {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -147,30 +167,31 @@ color: #FFFFFF;
 }
 
 .portfolio-btn {
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--main-color);
+  cursor: pointer;
+}
 
-letter-spacing: 0.03em;
-color: #212121;
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white-color);
+  background: var(--accent-color);
 }
 
 .work-name {
-font-weight: 700;
-font-size: 18px;
-line-height: 2.0;
-letter-spacing: 0.06em;
-color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
 }
 
 .work-description {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.88;
-/* identical to box height, or 188% */
-letter-spacing: 0.03em;
-color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--description-color);
 }
-
-
