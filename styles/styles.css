@@ -12,24 +12,60 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.line {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .logo {
+  display: flex;
   font-family: var(--second-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  align-items: center;
+  margin-right: 93px;
 }
 
 .first-part {
   color: var(--accent-color);
+  align-items: center;
 }
 
 .last-part {
   color: black;
+  align-items: center;
 }
 
 .link {
@@ -42,7 +78,27 @@ a {
 }
 
 .list {
+  display: flex;
   list-style: none;
+}
+
+.header-nav {
+  display: flex;
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.header-nav-item {
+  margin-right: 50px;
+  padding: 32px 0;
+}
+
+.header-nav-item:last-child {
+  margin-right: 0px;
 }
 
 .header-nav-link {
@@ -70,8 +126,17 @@ a {
   color: var(--description-color);
 }
 
+.header-mail-link {
+  margin-right: 50px;
+}
+
 .hero-sec {
   background: #2f303a;
+  text-align: center;
+}
+
+.hero {
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -83,8 +148,10 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-   color: var(--white-color);
+  color: var(--white-color);
   background: var(--accent-color);
+  margin-left: auto;
+  margin-right: auto;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -92,7 +159,7 @@ a {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var( --main-color);
+  color: var(--main-color);
   background: var(--white-color);
 }
 
@@ -106,12 +173,18 @@ a {
   color: var(--white-color);
 }
 
+.specifics {
+  margin: 0px;
+  padding: 0px;
+}
+
 .specifics-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .specifics-text {
@@ -120,11 +193,36 @@ a {
   color: var(--description-color);
 }
 
+.specifics .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .title {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.work {
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-section-back {
+  background: #f5f4fa;
+}
+
+.team-sec {
+  padding: 30px 0px;
+  text-align: center;
 }
 
 .team-name {
@@ -132,6 +230,7 @@ a {
   font-size: 16px;
   line-height: 1.18;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -150,6 +249,14 @@ a {
 
 .footer-title-adr {
   font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.footer-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
 }
 
 .footer-adress {
@@ -157,6 +264,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 
 .footer-mail-link,
@@ -168,6 +276,17 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.btn-center {
+  justify-content: center;
+
+  margin: 0px 0px 50px 0px;
+  padding: 0px;
+}
+
+.btn-width:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -175,6 +294,10 @@ a {
   line-height: 1.62;
   color: var(--main-color);
   cursor: pointer;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .portfolio-btn:hover,
@@ -183,12 +306,37 @@ a {
   background: var(--accent-color);
 }
 
+.portfolio-name {
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.portfolio-work {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-work:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-work:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.portfolio-examples {
+  padding: 20px 24px;
+}
+
 .work-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+
+  margin-bottom: 4px;
 }
 
 .work-description {
