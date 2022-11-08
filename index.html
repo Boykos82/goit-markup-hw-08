@@ -24,7 +24,7 @@
             <span class="last-part">Studio</span>
           </a>
           <ul class="nav-list list">
-            <li class="header-nav-item">
+            <li class="header-nav-item current">
               <a href="./index.html" class="header-nav-link ref-color"
                 >Студія</a
               >
@@ -67,7 +67,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button  class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -132,19 +132,40 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="work list">
             <li class="item">
+              <div class="wrapper">
               <img
                 src="img/img_1.jpg"
                 alt="клавіатура"
                 width="370"
                 height="294"
               />
+              <div class="overlay-box">
+                <p class="overlay-text">
+                  Десктопні додатки
+                </p>
+              </div>
+            </div>
             </li>
             <li class="item">
+              <div class="wrapper">
               <img src="img/img_2.jpg" alt="телефон" width="370" height="294" />
+              <div class="overlay-box">
+                <p class="overlay-text">
+                  Мобільні додатки
+                </p>
+              </div>
+            </div>
             </li>
             <li class="item">
+              <div class="wrapper">
               <img src="img/img_3.jpg" alt="планшет" width="370" height="294" />
-            </li>
+              <div class="overlay-box">
+                <p class="overlay-text">
+                  Дизайнерські рішення
+                </p>
+              </div>
+            </div>
+          </li>
           </ul>
         </div>
       </section>
@@ -442,5 +463,17 @@
       </div>
       
     </footer>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="close-btn" type="button" data-modal-close>
+      <svg class="icon-close" width="20" height="20">
+        <use href="./img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
   </body>
 </html>
