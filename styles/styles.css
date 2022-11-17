@@ -735,8 +735,7 @@ background-color: var(--white-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 
-transition: transfort 300ms ease-out;
-
+transition: transform 250ms ease-out;
 }
 .backdrop.is-hidden .modal {
   transform: translateX(-50%) translateY(-70%);
@@ -805,13 +804,33 @@ color: var(--description-color);
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+padding-left: 42px;
 }
+
+
 
 .form-message {
   resize: none;
   width: 448px;
   height: 120px;
 }
+
+.form-input-com {
+ 
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding-top: 12px;
+padding-left: 16px;
+
+}
+
+.form-field:focus-within > .form-input {
+  border: 1px solid #2196F3;
+ }
+
+.form-field:focus-within > .form-icon {
+  fill: var(--accent-color);
+ }
 
 .form-license {
   color: var(--description-color);
