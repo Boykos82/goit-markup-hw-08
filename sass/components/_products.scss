@@ -1,8 +1,16 @@
-.products__examples {
+.products {
+  display: flex;
     justify-content: center;
     margin: 0px;
     padding: 0px;
-  }
+   
+    }
+  
+
+  .hide {
+    @media screen and (max-width: 1199.98px) {
+    display: none;}}
+
   
   .products .products__item:not(:last-child) {
     margin-right: 30px;

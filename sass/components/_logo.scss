@@ -2,10 +2,14 @@
     display: flex;
     font-family: var(--second-font);
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     text-decoration: none;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
   
   .logo--first-part {
